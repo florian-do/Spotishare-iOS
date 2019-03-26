@@ -12,10 +12,13 @@ class JoinViewController : UIViewController, UITextFieldDelegate {
     
     @IBOutlet var collection: [UILabel]!
     @IBOutlet weak var pin: UITextField!
-    private var oldPosition: Int = 0
+    
+    private let DEFAULT_LABEL = "_"
+    private var oldLocation: Int = 0
     weak var mDelegate: JoinDelegate?
     
     @IBAction func mGesture(_ sender: Any) {
+        self.pin.resignFirstResponder()
         self.dismiss(animated: true)
     }
     
@@ -23,41 +26,39 @@ class JoinViewController : UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.pin.becomeFirstResponder()
         self.pin.delegate = self
+        self.pin.autocorrectionType = .no
         self.pin.autocapitalizationType = UITextAutocapitalizationType.allCharacters
         self.collection = self.collection.sorted(by: {$0.tag < $1.tag})
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        self.pin.resignFirstResponder()
-    }
+
     
     @IBAction func textChange(_ sender: UITextField) {
-        let position: Int = (sender.text?.count ?? 0) - 1
-        let s = sender.text ?? "_"
-        var c : Character
+        let location: Int = (sender.text?.count ?? 0) - 1
+        let s: String = sender.text ?? DEFAULT_LABEL
+        let position = (oldLocation > location) ? oldLocation : location
         
-        if (position >= 0) {
-            c = s[s.index(s.startIndex, offsetBy: position)]
-        } else {
-            c = "_"
-        }
-
-        collection[(oldPosition > position) ? oldPosition : position].text = (oldPosition > position) ? "_" : String(c)
+        collection[position].text = (oldLocation > location)
+            ? DEFAULT_LABEL
+            : String(s[safe: position] ?? "_")
         
-        oldPosition = position
+        oldLocation = location
         
         if sender.text?.count == 4 {
             // if
-            self.dismiss(animated: true)
+            
             mDelegate?.joinRoom()
+            self.pin.resignFirstResponder()
+            self.dismiss(animated: true)
             // else fail + vibrate
             //sender.text = ""
             //clearPin()
+            //let generator = UINotificationFeedbackGenerator()
+            //generator.notificationOccurred(.error)
         }
     }
     
     private func clearPin() {
-        oldPosition = 0
+        oldLocation = 0
         for label in collection {
             label.text = "_"
         }
