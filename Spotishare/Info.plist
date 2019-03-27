@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Token Refresh URL</key>
-	<string>$(TOKEN_REFRESH_URL)</string>
-	<key>Token Swap URL</key>
-	<string>$(TOKEN_SWAP_URL)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -43,6 +39,10 @@
 	<string>$(SPOTIFY_API_KEY)</string>
 	<key>Spotify Callback</key>
 	<string>$(SPOTIFY_CALLBACK)</string>
+	<key>Token Refresh URL</key>
+	<string>$(TOKEN_REFRESH_URL)</string>
+	<key>Token Swap URL</key>
+	<string>$(TOKEN_SWAP_URL)</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

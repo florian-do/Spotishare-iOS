@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DB8F7A7871994D54A4B00E2 /* Pods_Spotishare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D85E9ED4CFF7E96D450C17 /* Pods_Spotishare.framework */; };
+		3C211AB4224ABFC20022F42F /* SpotifyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C211AB3224ABFC20022F42F /* SpotifyClient.swift */; };
+		3C211AB8224AE3000022F42F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C211AB7224AE3000022F42F /* APIClient.swift */; };
+		3C211ABA224AE76D0022F42F /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C211AB9224AE76D0022F42F /* APIRouter.swift */; };
+		3C211ABC224AF31F0022F42F /* PlaylistReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C211ABB224AF31F0022F42F /* PlaylistReponse.swift */; };
+		3C4DDAB1224B47DA001F949A /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DDAB0224B47DA001F949A /* SongsViewController.swift */; };
+		3C4DDAB4224B4BEA001F949A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DDAB3224B4BEA001F949A /* BaseViewController.swift */; };
 		3C53BBBC22480F74006C2146 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */; };
 		3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */; };
 		3C919C472248551D00514A20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919C462248551D00514A20 /* Extensions.swift */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C211AB3224ABFC20022F42F /* SpotifyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyClient.swift; sourceTree = "<group>"; };
+		3C211AB7224AE3000022F42F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3C211AB9224AE76D0022F42F /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3C211ABB224AF31F0022F42F /* PlaylistReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistReponse.swift; sourceTree = "<group>"; };
+		3C4DDAAF224B0BE5001F949A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3C4DDAB0224B47DA001F949A /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		3C4DDAB3224B4BEA001F949A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewCell.swift; sourceTree = "<group>"; };
 		3C919C462248551D00514A20 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -38,6 +52,9 @@
 		3CF89497224881DE00BADE74 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		3CF8949B22489C8E00BADE74 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		3CF8949C2248A10F00BADE74 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		480CB2FBA1C770F14571DA5E /* Pods-Spotishare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotishare.release.xcconfig"; path = "Target Support Files/Pods-Spotishare/Pods-Spotishare.release.xcconfig"; sourceTree = "<group>"; };
+		96D85E9ED4CFF7E96D450C17 /* Pods_Spotishare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotishare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A0B0C7D2B58CA2BCFF82B8 /* Pods-Spotishare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotishare.debug.xcconfig"; path = "Target Support Files/Pods-Spotishare/Pods-Spotishare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,12 +63,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF89498224881DE00BADE74 /* SpotifyiOS.framework in Frameworks */,
+				1DB8F7A7871994D54A4B00E2 /* Pods_Spotishare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F066626ADEB31E0BAF3BD16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0B0C7D2B58CA2BCFF82B8 /* Pods-Spotishare.debug.xcconfig */,
+				480CB2FBA1C770F14571DA5E /* Pods-Spotishare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C211AB2224AA1EF0022F42F /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				3C211AB3224ABFC20022F42F /* SpotifyClient.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		3C211AB5224ADF3D0022F42F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3C211AB6224ADF480022F42F /* Model */,
+				3C211AB7224AE3000022F42F /* APIClient.swift */,
+				3C211AB9224AE76D0022F42F /* APIRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3C211AB6224ADF480022F42F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C211ABB224AF31F0022F42F /* PlaylistReponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C4DDAB2224B4BDB001F949A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3C4DDAB3224B4BEA001F949A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3C53BBBD224832FB006C2146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +128,7 @@
 				3CD686552245EE9400E3AFAE /* Spotishare */,
 				3CD686542245EE9400E3AFAE /* Products */,
 				3CF8949022487F8600BADE74 /* Frameworks */,
+				0F066626ADEB31E0BAF3BD16 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +143,9 @@
 		3CD686552245EE9400E3AFAE /* Spotishare */ = {
 			isa = PBXGroup;
 			children = (
+				3C4DDAB2224B4BDB001F949A /* Base */,
+				3C211AB5224ADF3D0022F42F /* API */,
+				3C211AB2224AA1EF0022F42F /* Singleton */,
 				3C53BBBD224832FB006C2146 /* Views */,
 				3CD6866D2246EEC000E3AFAE /* ViewController */,
 				3CD686562245EE9400E3AFAE /* AppDelegate.swift */,
@@ -102,6 +167,7 @@
 				3CD686582245EE9400E3AFAE /* HomeViewController.swift */,
 				3CD6866E2246EF4600E3AFAE /* JoinViewController.swift */,
 				3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */,
+				3C4DDAB0224B47DA001F949A /* SongsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -110,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3CF89497224881DE00BADE74 /* SpotifyiOS.framework */,
+				96D85E9ED4CFF7E96D450C17 /* Pods_Spotishare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD686682245EE9400E3AFAE /* Build configuration list for PBXNativeTarget "Spotishare" */;
 			buildPhases = (
+				852E86F0C39F9A3843AC96B8 /* [CP] Check Pods Manifest.lock */,
 				3CD6864F2245EE9400E3AFAE /* Sources */,
 				3CD686502245EE9400E3AFAE /* Frameworks */,
 				3CD686512245EE9400E3AFAE /* Resources */,
+				2088BB1630DD627ABA13C09D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +250,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2088BB1630DD627ABA13C09D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotishare/Pods-Spotishare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotishare/Pods-Spotishare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852E86F0C39F9A3843AC96B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotishare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CD6864F2245EE9400E3AFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,12 +306,18 @@
 			files = (
 				3CD686592245EE9400E3AFAE /* HomeViewController.swift in Sources */,
 				3CD686572245EE9400E3AFAE /* AppDelegate.swift in Sources */,
+				3C211ABC224AF31F0022F42F /* PlaylistReponse.swift in Sources */,
 				3CD6866F2246EF4600E3AFAE /* JoinViewController.swift in Sources */,
+				3C211AB8224AE3000022F42F /* APIClient.swift in Sources */,
+				3C4DDAB4224B4BEA001F949A /* BaseViewController.swift in Sources */,
 				3C919C472248551D00514A20 /* Extensions.swift in Sources */,
 				3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */,
+				3C211AB4224ABFC20022F42F /* SpotifyClient.swift in Sources */,
+				3C211ABA224AE76D0022F42F /* APIRouter.swift in Sources */,
 				3CF8949D2248A10F00BADE74 /* Const.swift in Sources */,
 				3CD6865F2245EE9400E3AFAE /* Spotishare.xcdatamodeld in Sources */,
 				3C53BBBC22480F74006C2146 /* DiscoverViewController.swift in Sources */,
+				3C4DDAB1224B47DA001F949A /* SongsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +328,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CD6865B2245EE9400E3AFAE /* Base */,
+				3C4DDAAF224B0BE5001F949A /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -223,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CF8949B22489C8E00BADE74 /* debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -275,7 +401,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "Spotishare/Spotishare-Bridging-Header.h";
@@ -286,6 +415,7 @@
 		3CD686672245EE9400E3AFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -331,7 +461,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "Spotishare/Spotishare-Bridging-Header.h";
@@ -344,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CF8949B22489C8E00BADE74 /* debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -357,7 +491,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.do-f.Spotishare";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spotishare/Spotishare-Bridging-Header.h";
@@ -369,7 +506,9 @@
 		};
 		3CD6866A2245EE9400E3AFAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480CB2FBA1C770F14571DA5E /* Pods-Spotishare.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,7 +522,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.do-f.Spotishare";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Spotishare/Spotishare-Bridging-Header.h";

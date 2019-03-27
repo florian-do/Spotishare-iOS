@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Room Number"; ObjectID = "7HV-oO-baq"; */
+"7HV-oO-baq.text" = "Room Number";
+
+/* Class = "UIButton"; normalTitle = "Join"; ObjectID = "9ng-Ju-AUt"; */
+"9ng-Ju-AUt.normalTitle" = "Join";
+
+/* Class = "UILabel"; text = "_"; ObjectID = "Fh9-fu-nD2"; */
+"Fh9-fu-nD2.text" = "_";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OOh-Ft-doT"; */
+"OOh-Ft-doT.text" = "Label";
+
+/* Class = "UILabel"; text = "_"; ObjectID = "RvP-eA-eDn"; */
+"RvP-eA-eDn.text" = "_";
+
+/* Class = "UILabel"; text = "_"; ObjectID = "S9Y-Oy-6wJ"; */
+"S9Y-Oy-6wJ.text" = "_";
+
+/* Class = "UILabel"; text = "_"; ObjectID = "g54-Bs-WVn"; */
+"g54-Bs-WVn.text" = "_";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "gTJ-dr-bmb"; */
+"gTJ-dr-bmb.normalTitle" = "Create";
+
+/* Class = "UILabel"; text = "Please type the correct room number to join"; ObjectID = "hFm-V4-pdg"; */
+"hFm-V4-pdg.text" = "Please type the correct room number to join";

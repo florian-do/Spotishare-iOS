@@ -28,4 +28,19 @@ class Const {
     static var defaultPlayURI: String {
         return "spotify:track:6VSaNvPPagk4U5Skxp6XfV"
     }
+    
+    struct API {
+        static let baseURL = "https://api.spotify.com/v1"
+        
+        enum HTTPHeaderField: String {
+            case authentication = "Authorization"
+            case contentType = "Content-Type"
+            case acceptType = "Accept"
+            case acceptEncoding = "Accept-Encoding"
+        }
+        
+        enum ContentType: String {
+            case json = "application/json"
+        }
+    }
 }

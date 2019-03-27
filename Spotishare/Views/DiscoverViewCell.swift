@@ -8,13 +8,21 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class DiscoverViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var cover: UIImageView!
+    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var image: UIImageView!
     
-    func configureCell() {
-        
+    func configureCell(item: PlaylistItem) {
+//        self.cardView.layer.cornerRadius = 20.0
+//        self.cardView.layer.shadowColor = UIColor.darkGray.cgColor
+//        self.cardView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+//        self.cardView.layer.shadowRadius = 2.0
+//        self.cardView.layer.shadowOpacity = 1.0
+        self.label.text = item.name
+        self.image.sd_setImage(with: URL(string: item.images[0].url), placeholderImage: #imageLiteral(resourceName: "ic_launcher"))
     }
 }
