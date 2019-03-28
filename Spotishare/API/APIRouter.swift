@@ -11,10 +11,13 @@ import Alamofire
 enum APIRouter: URLRequestConvertible {
     
     case playlist
+    case playlistByID(id: String)
     
     private var method: HTTPMethod {
         switch self {
         case .playlist:
+            return .get
+        case .playlistByID:
             return .get
         }
     }
@@ -23,12 +26,16 @@ enum APIRouter: URLRequestConvertible {
         switch self {
         case .playlist:
             return "me/playlists"
+        case .playlistByID(let id):
+            return "\(id)/tracks"
         }
     }
     
     private var parameters: Parameters? {
         switch self {
         case .playlist:
+            return nil
+        case .playlistByID:
             return nil
         }
     }

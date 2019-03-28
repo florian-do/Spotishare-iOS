@@ -17,6 +17,8 @@
 		3C53BBBC22480F74006C2146 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */; };
 		3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */; };
 		3C919C472248551D00514A20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919C462248551D00514A20 /* Extensions.swift */; };
+		3CA35D8B224C84AF001FD6E5 /* SongViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */; };
+		3CCC2A71224C3A280033A53D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC2A70224C3A280033A53D /* MainViewController.swift */; };
 		3CD686572245EE9400E3AFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD686562245EE9400E3AFAE /* AppDelegate.swift */; };
 		3CD686592245EE9400E3AFAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD686582245EE9400E3AFAE /* HomeViewController.swift */; };
 		3CD6865C2245EE9400E3AFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6865A2245EE9400E3AFAE /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewCell.swift; sourceTree = "<group>"; };
 		3C919C462248551D00514A20 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewCell.swift; sourceTree = "<group>"; };
+		3CCC2A70224C3A280033A53D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3CD686532245EE9400E3AFAE /* Spotishare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotishare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD686562245EE9400E3AFAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD686582245EE9400E3AFAE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */,
+				3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				3CD6866E2246EF4600E3AFAE /* JoinViewController.swift */,
 				3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */,
 				3C4DDAB0224B47DA001F949A /* SongsViewController.swift */,
+				3CCC2A70224C3A280033A53D /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -313,11 +319,13 @@
 				3C919C472248551D00514A20 /* Extensions.swift in Sources */,
 				3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */,
 				3C211AB4224ABFC20022F42F /* SpotifyClient.swift in Sources */,
+				3CCC2A71224C3A280033A53D /* MainViewController.swift in Sources */,
 				3C211ABA224AE76D0022F42F /* APIRouter.swift in Sources */,
 				3CF8949D2248A10F00BADE74 /* Const.swift in Sources */,
 				3CD6865F2245EE9400E3AFAE /* Spotishare.xcdatamodeld in Sources */,
 				3C53BBBC22480F74006C2146 /* DiscoverViewController.swift in Sources */,
 				3C4DDAB1224B47DA001F949A /* SongsViewController.swift in Sources */,
+				3CA35D8B224C84AF001FD6E5 /* SongViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

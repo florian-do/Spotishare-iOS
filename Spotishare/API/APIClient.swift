@@ -16,4 +16,11 @@ class APIClient {
                 completion(result.value)
         }
     }
+    
+    static func getPlaylistByID(id: String, completion: @escaping (PlaylistReponse?) -> ()) {
+        AF.request(APIRouter.playlistByID(id: id))
+            .responseDecodable { (result: DataResponse<PlaylistReponse>) in
+                completion(result.value)
+        }
+    }
 }

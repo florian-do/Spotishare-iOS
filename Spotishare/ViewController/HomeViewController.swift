@@ -39,7 +39,7 @@ class HomeViewController: BaseViewController, JoinDelegate, SpotifyDelegate {
             
         } else {
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "discoverSegue", sender: nil)
+                self.performSegue(withIdentifier: "mainSegue", sender: nil)
             }
         }
     }
