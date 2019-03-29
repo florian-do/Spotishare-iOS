@@ -29,7 +29,6 @@ struct PlaylistItem: Codable {
     let primaryColor: Int?
     let itemPublic: Bool
     let snapshotID: String
-    let tracks: Tracks
     let type: ItemType
     let uri: String
     
@@ -40,7 +39,7 @@ struct PlaylistItem: Codable {
         case primaryColor = "primary_color"
         case itemPublic = "public"
         case snapshotID = "snapshot_id"
-        case tracks, type, uri
+        case type, uri
     }
 }
 
@@ -86,11 +85,6 @@ enum OwnerType: String, Codable {
 enum URI: String, Codable {
     case spotifyUserSandy016 = "spotify:user:sandy016"
     case spotifyUserSpotify = "spotify:user:spotify"
-}
-
-struct Tracks: Codable {
-    let href: String
-    let total: Int
 }
 
 enum ItemType: String, Codable {

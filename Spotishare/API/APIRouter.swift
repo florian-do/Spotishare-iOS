@@ -11,7 +11,7 @@ import Alamofire
 enum APIRouter: URLRequestConvertible {
     
     case playlist
-    case playlistByID(id: String)
+    case playlistByID(id: String, fields: String)
     
     private var method: HTTPMethod {
         switch self {
@@ -26,8 +26,8 @@ enum APIRouter: URLRequestConvertible {
         switch self {
         case .playlist:
             return "me/playlists"
-        case .playlistByID(let id):
-            return "\(id)/tracks"
+        case .playlistByID(let id, let fields):
+            return "playlists/\(id)/tracks"
         }
     }
     
@@ -44,9 +44,7 @@ enum APIRouter: URLRequestConvertible {
         let url = try Const.API.baseURL.asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         
-        
         urlRequest.httpMethod = method.rawValue
-        
         urlRequest.setValue(Const.API.ContentType.json.rawValue, forHTTPHeaderField: Const.API.HTTPHeaderField.acceptType.rawValue)
         urlRequest.setValue(Const.API.ContentType.json.rawValue, forHTTPHeaderField: Const.API.HTTPHeaderField.contentType.rawValue)
         

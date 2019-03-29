@@ -16,7 +16,9 @@ class SongViewCell: UITableViewCell {
     @IBOutlet weak var expliciteView: UIView!
     
     
-    func configureCell() {
+    func configureCell(item: SongItem) {
         self.expliciteView.layer.cornerRadius = 3
+        self.title?.text = item.track.name
+        self.artistAlbumName?.text = item.track.artists[0].name+" • "+item.track.album.name
     }
 }
