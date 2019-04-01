@@ -16,6 +16,16 @@
 		3C4DDAB4224B4BEA001F949A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DDAB3224B4BEA001F949A /* BaseViewController.swift */; };
 		3C53BBBC22480F74006C2146 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */; };
 		3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */; };
+		3C632410224EB6A10092012C /* CacheDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63240F224EB6A10092012C /* CacheDB.swift */; };
+		3C632413224EBBCC0092012C /* CDSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C632412224EBBCC0092012C /* CDSong.swift */; };
+		3C632415224EC3400092012C /* RefreshStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C632414224EC3400092012C /* RefreshStrategy.swift */; };
+		3C632418224ED4DC0092012C /* PlaylistRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C632417224ED4DC0092012C /* PlaylistRepo.swift */; };
+		3C63241A225165A50092012C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C632419225165A50092012C /* GoogleService-Info.plist */; };
+		3C63241C225168060092012C /* FirebaseDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63241B225168060092012C /* FirebaseDB.swift */; };
+		3C63241E225171BA0092012C /* SpotishareSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63241D225171BA0092012C /* SpotishareSession.swift */; };
+		3C63242022517E530092012C /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63241F22517E530092012C /* QueueViewController.swift */; };
+		3C6324222251E11D0092012C /* QueueViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6324212251E11D0092012C /* QueueViewCell.swift */; };
+		3C6324252251E3CC0092012C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6324242251E3CC0092012C /* Queue.swift */; };
 		3C919C472248551D00514A20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919C462248551D00514A20 /* Extensions.swift */; };
 		3CA35D8B224C84AF001FD6E5 /* SongViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */; };
 		3CCC2A71224C3A280033A53D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC2A70224C3A280033A53D /* MainViewController.swift */; };
@@ -42,6 +52,16 @@
 		3C4DDAB3224B4BEA001F949A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewCell.swift; sourceTree = "<group>"; };
+		3C63240F224EB6A10092012C /* CacheDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheDB.swift; sourceTree = "<group>"; };
+		3C632412224EBBCC0092012C /* CDSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSong.swift; sourceTree = "<group>"; };
+		3C632414224EC3400092012C /* RefreshStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshStrategy.swift; sourceTree = "<group>"; };
+		3C632417224ED4DC0092012C /* PlaylistRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRepo.swift; sourceTree = "<group>"; };
+		3C632419225165A50092012C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C63241B225168060092012C /* FirebaseDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDB.swift; sourceTree = "<group>"; };
+		3C63241D225171BA0092012C /* SpotishareSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotishareSession.swift; sourceTree = "<group>"; };
+		3C63241F22517E530092012C /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		3C6324212251E11D0092012C /* QueueViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewCell.swift; sourceTree = "<group>"; };
+		3C6324242251E3CC0092012C /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		3C919C462248551D00514A20 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewCell.swift; sourceTree = "<group>"; };
 		3CCC2A70224C3A280033A53D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				3C211AB3224ABFC20022F42F /* SpotifyClient.swift */,
+				3C63240F224EB6A10092012C /* CacheDB.swift */,
+				3C632414224EC3400092012C /* RefreshStrategy.swift */,
+				3C63241B225168060092012C /* FirebaseDB.swift */,
+				3C63241D225171BA0092012C /* SpotishareSession.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -98,6 +122,7 @@
 		3C211AB5224ADF3D0022F42F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3C632416224ED4CF0092012C /* Repository */,
 				3C211AB6224ADF480022F42F /* Model */,
 				3C211AB7224AE3000022F42F /* APIClient.swift */,
 				3C211AB9224AE76D0022F42F /* APIRouter.swift */,
@@ -128,8 +153,33 @@
 			children = (
 				3C53BBBE2248331C006C2146 /* DiscoverViewCell.swift */,
 				3CA35D8A224C84AF001FD6E5 /* SongViewCell.swift */,
+				3C6324212251E11D0092012C /* QueueViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3C632411224EBBB20092012C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3C632412224EBBCC0092012C /* CDSong.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3C632416224ED4CF0092012C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3C632417224ED4DC0092012C /* PlaylistRepo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3C6324232251E3C20092012C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C6324242251E3CC0092012C /* Queue.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3CD6864A2245EE9400E3AFAE = {
@@ -154,6 +204,8 @@
 		3CD686552245EE9400E3AFAE /* Spotishare */ = {
 			isa = PBXGroup;
 			children = (
+				3C6324232251E3C20092012C /* Model */,
+				3C632411224EBBB20092012C /* CoreData */,
 				3C4DDAB2224B4BDB001F949A /* Base */,
 				3C211AB5224ADF3D0022F42F /* API */,
 				3C211AB2224AA1EF0022F42F /* Singleton */,
@@ -164,6 +216,7 @@
 				3CD686622245EE9400E3AFAE /* LaunchScreen.storyboard */,
 				3CD6866B2245F10D00E3AFAE /* Assets.xcassets */,
 				3CD686652245EE9400E3AFAE /* Info.plist */,
+				3C632419225165A50092012C /* GoogleService-Info.plist */,
 				3CD6865D2245EE9400E3AFAE /* Spotishare.xcdatamodeld */,
 				3C919C462248551D00514A20 /* Extensions.swift */,
 				3CF8948C22487E5000BADE74 /* Spotishare-Bridging-Header.h */,
@@ -180,6 +233,7 @@
 				3C53BBBB22480F74006C2146 /* DiscoverViewController.swift */,
 				3C4DDAB0224B47DA001F949A /* SongsViewController.swift */,
 				3CCC2A70224C3A280033A53D /* MainViewController.swift */,
+				3C63241F22517E530092012C /* QueueViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -255,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD686642245EE9400E3AFAE /* LaunchScreen.storyboard in Resources */,
+				3C63241A225165A50092012C /* GoogleService-Info.plist in Resources */,
 				3CD6866C2245F10D00E3AFAE /* Assets.xcassets in Resources */,
 				3CD6865C2245EE9400E3AFAE /* Main.storyboard in Resources */,
 			);
@@ -273,14 +328,20 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Spotishare/Pods-Spotishare-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -316,17 +377,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C63242022517E530092012C /* QueueViewController.swift in Sources */,
 				3CD686592245EE9400E3AFAE /* HomeViewController.swift in Sources */,
 				3CD686572245EE9400E3AFAE /* AppDelegate.swift in Sources */,
 				3C211ABC224AF31F0022F42F /* PlaylistReponse.swift in Sources */,
+				3C6324222251E11D0092012C /* QueueViewCell.swift in Sources */,
+				3C632418224ED4DC0092012C /* PlaylistRepo.swift in Sources */,
 				3CD6866F2246EF4600E3AFAE /* JoinViewController.swift in Sources */,
 				3CE425F5224DECA000D84C60 /* Track.swift in Sources */,
+				3C632413224EBBCC0092012C /* CDSong.swift in Sources */,
 				3C211AB8224AE3000022F42F /* APIClient.swift in Sources */,
+				3C63241E225171BA0092012C /* SpotishareSession.swift in Sources */,
 				3C4DDAB4224B4BEA001F949A /* BaseViewController.swift in Sources */,
 				3C919C472248551D00514A20 /* Extensions.swift in Sources */,
+				3C632415224EC3400092012C /* RefreshStrategy.swift in Sources */,
 				3CE425F3224DEB8C00D84C60 /* SongsResponse.swift in Sources */,
 				3C53BBBF2248331C006C2146 /* DiscoverViewCell.swift in Sources */,
+				3C6324252251E3CC0092012C /* Queue.swift in Sources */,
+				3C63241C225168060092012C /* FirebaseDB.swift in Sources */,
 				3C211AB4224ABFC20022F42F /* SpotifyClient.swift in Sources */,
+				3C632410224EB6A10092012C /* CacheDB.swift in Sources */,
 				3CCC2A71224C3A280033A53D /* MainViewController.swift in Sources */,
 				3C211ABA224AE76D0022F42F /* APIRouter.swift in Sources */,
 				3CF8949D2248A10F00BADE74 /* Const.swift in Sources */,

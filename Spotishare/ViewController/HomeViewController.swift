@@ -10,12 +10,14 @@ import UIKit
 
 class HomeViewController: BaseViewController, JoinDelegate, SpotifyDelegate {
 
+    @IBOutlet weak var loading: UIVisualEffectView!
     @IBOutlet weak var join: UIButton!
     @IBOutlet weak var create: UIButton!
     var i : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loading.isHidden = true
         SpotifyClient.instance.mDelegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -31,16 +33,18 @@ class HomeViewController: BaseViewController, JoinDelegate, SpotifyDelegate {
     }
     
     func joinRoom() {
+        loading.isHidden = false
         SpotifyClient.instance.connect()
     }
     
     func spotifyDidSuccessfullyConnect(isMaster: Bool) {
-        if isMaster {
-            
-        } else {
-            DispatchQueue.main.async {
+        DispatchQueue.main.async {
+            if isMaster {
+                
+            } else {
                 self.performSegue(withIdentifier: "mainSegue", sender: nil)
             }
+            //self.loading.isHidden = true
         }
     }
     
@@ -52,8 +56,6 @@ class HomeViewController: BaseViewController, JoinDelegate, SpotifyDelegate {
     
     @IBAction func onClick(_ sender: Any) {
         i += 1
-        
-        //SpotifyClient.instance.connect()
         
         switch i {
         case 1:

@@ -41,6 +41,7 @@ class SpotifyClient: NSObject, SPTSessionManagerDelegate, SPTAppRemoteDelegate, 
     }()
     
     func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
+        
         print(session.accessToken)
         //sessionManager.renewSession()
         if self.isMaster {

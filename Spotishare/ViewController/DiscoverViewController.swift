@@ -52,6 +52,7 @@ class DiscoverViewController: BaseViewController {
                 vc.name = item.name
                 vc.imageUrl = item.images[0].url
                 vc.type = item.type.rawValue
+                vc.header = vc.type.capitalizingFirstLetter()+" by "+item.owner.displayName
             }
         }
     }

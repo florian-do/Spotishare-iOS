@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class MainViewController: BaseViewController {
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

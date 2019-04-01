@@ -18,10 +18,10 @@ class APIClient {
     }
     
     static func getPlaylistByID(id: String, completion: @escaping (SongsReponse?) -> ()) {
-        //let toEncode = "?fields=items(id,track(name,uri,album.name,artists(name)))"
-        //let fields: String? = toEncode.addingPercentEncoding(withAllowedCharacters: .alphanumerics)
-        AF.request(APIRouter.playlistByID(id: id, fields: ""))
+        AF.request(APIRouter.playlistByID(id: id))
             .responseDecodable { (result: DataResponse<SongsReponse>) in
+                //print(result.debugDescription)
+                //print(result.response?.httpHeaders.value(for: "Cache-Control"))
                 completion(result.value)
         }
     }

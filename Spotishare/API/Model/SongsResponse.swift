@@ -21,6 +21,8 @@ struct Album: Codable {
 }
 
 struct Artist: Codable {
-    let href: String
-    let id, name, type, uri: String
+    let href: String?
+    let id: String?
+    let uri: String?
+    let name, type: String
 }

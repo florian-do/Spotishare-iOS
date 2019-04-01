@@ -54,7 +54,7 @@ struct Image: Codable {
 }
 
 struct Owner: Codable {
-    let displayName: DisplayName
+    let displayName: String
     let externalUrls: ExternalUrls
     let href: String
     let id: ID
@@ -66,11 +66,6 @@ struct Owner: Codable {
         case externalUrls = "external_urls"
         case href, id, type, uri
     }
-}
-
-enum DisplayName: String, Codable {
-    case florianMinhTanDo = "Florian Minh Tan Do"
-    case spotify = "Spotify"
 }
 
 enum ID: String, Codable {

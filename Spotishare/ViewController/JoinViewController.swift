@@ -44,24 +44,36 @@ class JoinViewController : UIViewController, UITextFieldDelegate {
         oldLocation = location
         
         if sender.text?.count == 4 {
-            // if
-            
-            mDelegate?.joinRoom()
-            self.pin.resignFirstResponder()
-            self.dismiss(animated: true)
-            // else fail + vibrate
-            //sender.text = ""
-            //clearPin()
-            //let generator = UINotificationFeedbackGenerator()
-            //generator.notificationOccurred(.error)
+            join(pin: sender)
         }
     }
     
-    private func clearPin() {
+    private func join(pin: UITextField) {
+        FirebaseDB.get().firebaseDb.child(pin.text ?? "").observeSingleEvent(of: .value, with: { (s) in
+            print("success: \(s.childrenCount)")
+            if s.childrenCount > 0 {
+                SpotishareSession.get().setRoomCode(code: pin.text ?? "")
+                self.mDelegate?.joinRoom()
+                self.pin.resignFirstResponder()
+                self.dismiss(animated: true)
+            } else {
+                self.clearPin(pin: pin)
+            }
+        }) { (error) in
+            self.clearPin(pin: pin)
+            print(error.localizedDescription)
+        }
+    }
+    
+    private func clearPin(pin: UITextField) {
+        pin.text = ""
         oldLocation = 0
         for label in collection {
             label.text = "_"
         }
+        
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

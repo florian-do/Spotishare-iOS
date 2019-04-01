@@ -14,4 +14,12 @@ extension String {
         let inRange = (position >= 0 && position < self.count)
         return inRange ? self[index] : nil
     }
+    
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 }

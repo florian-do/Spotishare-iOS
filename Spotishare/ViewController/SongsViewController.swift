@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SongsViewController: BaseViewController {
     
@@ -19,6 +20,7 @@ class SongsViewController: BaseViewController {
     var name: String = ""
     var imageUrl: String = ""
     var type: String = ""
+    var header: String = ""
     
     var items: [SongItem] = [] {
         didSet {
@@ -36,6 +38,7 @@ class SongsViewController: BaseViewController {
         
         self.headerCover?.sd_setImage(with: URL(string: imageUrl))
         self.headerTitle?.text = self.name
+        self.headerType?.text = self.header
         
         APIClient.getPlaylistByID(id: self.id, completion: { result in
             guard let result = result else {
@@ -43,6 +46,36 @@ class SongsViewController: BaseViewController {
                 return
             }
             
+//            RefreshStrategy.get().refresh(className: CDSong().className)
+//            let context = CacheDB.get().getContext()
+//            for i in result.items {
+//                let song = CacheDB.get().getNewEntity(context: context, entity: EntitySong.entity.rawValue)
+//                song.setValue(self.id, forKey: EntitySong.id.rawValue)
+//                song.setValue(i.track.name, forKey: EntitySong.title.rawValue)
+//                song.setValue(i.track.album.name, forKey: EntitySong.albumName.rawValue)
+//                song.setValue(i.track.artists[0].name, forKey: EntitySong.artistsName.rawValue)
+//                song.setValue(i.track.uri, forKey: EntitySong.uri.rawValue)
+//            }
+//
+//            do {
+//                try context.save()
+//            } catch {
+//                print("Failed saving")
+//            }
+            
+//            let request = NSFetchRequest<NSFetchRequestResult>(entityName: CDSong.entity.rawValue)
+//            request.predicate = NSPredicate(format: "id = %@", self.id)
+//            
+//            do {
+//                let result = try context.fetch(request)
+//                print("IS EMPTY : \(result.isEmpty)")
+//                for data in result as! [NSManagedObject] {
+//                    print(data.value(forKey: "title") as! String)
+//                }
+//            } catch {
+//                print("Failed reading")
+//            }
+        
             self.items = result.items
         })
     }
@@ -68,16 +101,16 @@ extension SongsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: .zero)
-        let button = UIButton(frame: .zero)
-        view.addSubview(button)
-        view.backgroundColor = .yellow
-        button.frame = view.frame
-        return view
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 40
+//    }
+//    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let view = UIView(frame: .zero)
+//        let button = UIButton(frame: .zero)
+//        view.addSubview(button)
+//        view.backgroundColor = .yellow
+//        button.frame = view.frame
+//        return view
+//    }
 }
