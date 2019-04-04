@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Before building the project you NEED to add your Spotify APIKEY, CALLBACK, TOKEN_SWAP AND TOKEN_REFRESH to your `debug.xcconfig`
+Before building the project you MUST add your Spotify APIKEY, CALLBACK, TOKEN_SWAP AND TOKEN_REFRESH to your `debug.xcconfig`
 You can follow those steps : 
 * [Keeping secrets out of Git in your iOS app](https://medium.com/ios-os-x-development/keeping-secrets-out-of-git-in-your-ios-app-c01a357e824b)
 * [Token Swap and Refresh](https://developer.spotify.com/documentation/ios/guides/token-swap-and-refresh/)
